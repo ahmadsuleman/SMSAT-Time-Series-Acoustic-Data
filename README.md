@@ -17,9 +17,9 @@ The study is based on a **custom heart rate time series dataset** captured from 
 
 A custom dataset of heart rate time series captured as acoustic signals. It includes **normal**, **abnormal**, and **borderline** cases, with accompanying metadata for classification purposes.
 
--- 📁 **Dataset Access**: 
+- 📁 **Dataset Access**: 
 🔗 [https://www.kaggle.com/datasets/crdkhan/qmsat-dataset/data](https://www.kaggle.com/datasets/crdkhan/qmsat-dataset/data) 
--- 📈 **Raw Data Analysis Notebook**:  
+- 📈 **Raw Data Analysis Notebook**:  
 🔗 [https://www.kaggle.com/code/crdkhan/1-dataset-rawaudioanalysis](https://www.kaggle.com/code/crdkhan/1-dataset-rawaudioanalysis)
 
 ---
