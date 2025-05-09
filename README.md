@@ -9,6 +9,7 @@
 This project explores the classification of **heart rate audio signals** using a **custom Convolutional Neural Network (CNN)** architecture specifically designed for 1D time-series acoustic data. The goal is to improve classification accuracy on complex heart sound patterns through a novel representation and model training strategy.
 
 The study is based on a **custom heart rate time series dataset** captured from real-world acoustic recordings, with preprocessing and exploratory analysis included.
+
 ![Alt Text](SMSAT_Gihub.jpg)
 ---
 
@@ -16,7 +17,8 @@ The study is based on a **custom heart rate time series dataset** captured from 
 
 A custom dataset of heart rate time series captured as acoustic signals. It includes **normal**, **abnormal**, and **borderline** cases, with accompanying metadata for classification purposes.
 
-📁 **Dataset Access**: 🔗 [https://www.kaggle.com/datasets/crdkhan/qmsat-dataset/data](https://www.kaggle.com/datasets/crdkhan/qmsat-dataset/data) 
+📁 **Dataset Access**: 
+🔗 [https://www.kaggle.com/datasets/crdkhan/qmsat-dataset/data](https://www.kaggle.com/datasets/crdkhan/qmsat-dataset/data) 
 📈 **Raw Data Analysis Notebook**:  
 🔗 [https://www.kaggle.com/code/crdkhan/1-dataset-rawaudioanalysis](https://www.kaggle.com/code/crdkhan/1-dataset-rawaudioanalysis)
 
