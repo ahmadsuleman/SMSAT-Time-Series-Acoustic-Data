@@ -9,7 +9,7 @@
 This project explores the classification of **heart rate audio signals** using a **custom Convolutional Neural Network (CNN)** architecture specifically designed for 1D time-series acoustic data. The goal is to improve classification accuracy on complex heart sound patterns through a novel representation and model training strategy.
 
 The study is based on a **custom heart rate time series dataset** captured from real-world acoustic recordings, with preprocessing and exploratory analysis included.
-
+![Alt Text](SMSAT_Gihub.jpg)
 ---
 
 ## 🔍 Dataset
@@ -49,7 +49,7 @@ This repository will be licensed under the **MIT License** upon release.
 ## ✉️ Contact
 
 For collaboration or questions, please reach out via:  
-📧 **your.email@domain.com**
+📧 **engineersuleman118@gmail.com**
 
 ---
-![Alt Text](SMSAT_Gihub.jpg)
+
