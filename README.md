@@ -1,9 +1,4 @@
 # SMSAT-Time-Series-Acoustic-Data
-## Heart Rate time series acoustic dataset. This repository is a pre-publication GitHub repository for our upcoming paper. Code will be available soon.
-### This paper is based on a custom dataset and classification is performed based on a custom CNN based architecture for improved classification accuracy
-Dataset Link: 
-Raw Data Analysis Notebook: https://www.kaggle.com/code/crdkhan/1-dataset-rawaudioanalysis
-# Heart Rate Time Series Acoustic Dataset
 
 > ⚠️ This is a **pre-publication** repository for our upcoming paper on heart rate time series classification using custom CNN-based architectures. The full codebase will be released upon acceptance of the manuscript.
 
