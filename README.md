@@ -56,12 +56,13 @@ For collaboration or questions, please reach out via:
 ---
 ## Citation
 ``` bibtex
-@inproceedings{suleman2022smart,
-  title={Smart scheduling of EVs through intelligent home energy management using deep reinforcement learning},
-  author={Suleman, Ahmad and Amin, M Asim and Fatima, Mahnoor and Asad, Bilal and Menghwar, Mohan and Hashmi, Muhammad Adnan},
-  booktitle={2022 17th International Conference on Emerging Technologies (ICET)},
-  pages={18--24},
-  year={2022},
-  organization={IEEE}
+@misc{suleman2025smsatmultimodalacousticdataset,
+      title={SMSAT: A Multimodal Acoustic Dataset and Deep Contrastive Learning Framework for Affective and Physiological Modeling of Spiritual Meditation}, 
+      author={Ahmad Suleman and Yazeed Alkhrijah and Misha Urooj Khan and Hareem Khan and Muhammad Abdullah Husnain Ali Faiz and Mohamad A. Alawad and Zeeshan Kaleem and Guan Gui},
+      year={2025},
+      eprint={2505.00839},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2505.00839}, 
 }
 
