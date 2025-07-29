@@ -54,4 +54,14 @@ For collaboration or questions, please reach out via:
 📧 **engineersuleman118@gmail.com**
 
 ---
+## Citation
+``` bibtex
+@inproceedings{suleman2022smart,
+  title={Smart scheduling of EVs through intelligent home energy management using deep reinforcement learning},
+  author={Suleman, Ahmad and Amin, M Asim and Fatima, Mahnoor and Asad, Bilal and Menghwar, Mohan and Hashmi, Muhammad Adnan},
+  booktitle={2022 17th International Conference on Emerging Technologies (ICET)},
+  pages={18--24},
+  year={2022},
+  organization={IEEE}
+}
 
