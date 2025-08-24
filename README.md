@@ -28,12 +28,7 @@ A custom dataset of heart rate time series captured as acoustic signals. It incl
 
 ---
 
-## 🧪 Status
 
-- ✅ Dataset preprocessing complete  
-- ✅ Exploratory data analysis (EDA) notebook available on Kaggle  
-- 🚧 Model training and evaluation code (coming soon)  
-- 📝 Paper under review
 
 ---
 
