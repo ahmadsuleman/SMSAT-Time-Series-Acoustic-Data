@@ -19,12 +19,21 @@ A custom dataset of heart rate time series captured as acoustic signals. It incl
 
 ---
 
-## 🧠 Key Features
 
-- End-to-end pipeline for preprocessing acoustic heart rate signals.
-- Custom CNN architecture optimized for 1D acoustic time series.
-- Early results show strong improvements in classification accuracy over traditional 1D CNNs.
-- Spectrogram and waveform visualizations included.
+## 📁 Repository Contents
+
+| File/Notebook | Description |
+|---------------|-------------|
+| `1-dataset-rawaudioanalysis.ipynb` | Preprocesses raw acoustic data and extracts spectrograms and waveform features. |
+| `2-dataset-validation.ipynb` | Validates metadata, checks data balance, and visualizes distributions. |
+| `3-smsat-encoder-train-cosine-0-9975.ipynb` | Trains a CNN encoder using cosine similarity-based contrastive loss. |
+| `4-calmanalysismodel-cam-acc-0-99.ipynb` | CAM-based model with attention for stress classification. |
+| `4multiclass-binary-otherbasemodels-ablation-study.ipynb` | Baseline comparison for binary and multi-class classification models. |
+| `5-anova-paiwise-t-test.ipynb` | Statistical significance testing (ANOVA, t-test) on model results. |
+| `6-calmanalysismodel-cam.ipynb` | Final CAM-based model and evaluation. |
+| `7-modelvisulization.ipynb` | Visualizes CAM attention maps and classification results. |
+| `README.md` | Project instructions and overview. |
+| `SMSAT_Gihub.jpg` | Illustrative dataset image. |
 
 ---
 
