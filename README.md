@@ -44,18 +44,6 @@ For collaboration or questions, please reach out via:
 📧 **engineersuleman118@gmail.com**
 
 ---
-## Citation
-``` bibtex
-@misc{suleman2025smsatmultimodalacousticdataset,
-      title={SMSAT: A Multimodal Acoustic Dataset and Deep Contrastive Learning Framework for Affective and Physiological Modeling of Spiritual Meditation}, 
-      author={Ahmad Suleman and Yazeed Alkhrijah and Misha Urooj Khan and Hareem Khan and Muhammad Abdullah Husnain Ali Faiz and Mohamad A. Alawad and Zeeshan Kaleem and Guan Gui},
-      year={2025},
-      eprint={2505.00839},
-      archivePrefix={arXiv},
-      primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2505.00839}, 
-}
-
 ---
 
 ## 🧩 Methods & Classes Reference
@@ -125,5 +113,18 @@ Here’s a quick reference of what you’ll find:
 - **EDA Plots** → amplitude envelopes, spectrograms  
 - **Embeddings** → PCA/TSNE of latent spaces  
 - **CAM Overlays** → interpret calmness predictions  
+
+
+## Citation
+``` bibtex
+@misc{suleman2025smsatmultimodalacousticdataset,
+      title={SMSAT: A Multimodal Acoustic Dataset and Deep Contrastive Learning Framework for Affective and Physiological Modeling of Spiritual Meditation}, 
+      author={Ahmad Suleman and Yazeed Alkhrijah and Misha Urooj Khan and Hareem Khan and Muhammad Abdullah Husnain Ali Faiz and Mohamad A. Alawad and Zeeshan Kaleem and Guan Gui},
+      year={2025},
+      eprint={2505.00839},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2505.00839}, 
+}
 
 
