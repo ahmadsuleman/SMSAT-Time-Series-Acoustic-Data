@@ -1,12 +1,7 @@
 # SMSAT-Time-Series-Acoustic-Data
-
-> ⚠️ This is a **pre-publication** repository for our upcoming paper on heart rate time series classification using custom CNN-based architectures. The full codebase will be released upon acceptance of the manuscript.
-
----
-
 ## 🩺 Project Overview
 
-This project explores the classification of **heart rate audio signals** using a **custom Convolutional Neural Network (CNN)** architecture specifically designed for 1D time-series acoustic data. The goal is to improve classification accuracy on complex heart sound patterns through a novel representation and model training strategy.
+This work contributes a validated multimodal dataset and a scalable deep learning framework for affective computing applications in stress monitoring, mental well-being, and therapeutic audio-based interventions
 
 The study is based on a **custom heart rate time series dataset** captured from real-world acoustic recordings, with preprocessing and exploratory analysis included.
 
