@@ -38,91 +38,57 @@ A custom dataset of heart rate time series captured as acoustic signals. It incl
 ---
 
 
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/engineersuleman/SMSAT-Time-Series-Acoustic-Data.git
+cd SMSAT-Time-Series-Acoustic-Data
+```
+
+### 2. Create Virtual Environment (Always show details)
+
+```bash
+python -m venv smsat-env
+source smsat-env/bin/activate  # Windows: smsat-env\\Scripts\\activate
+```
+
+```bash
+python -m venv smsat-env
+source smsat-env/bin/activate  # Windows: smsat-env\Scripts\activate
+```
+
+### 3. Install Dependencies (Always show details)
+
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn scipy librosa torch torchvision torchaudio plotly ipywidgets
+```
+
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn scipy librosa torch torchvision torchaudio plotly ipywidgets
+```
 
 ---
 
-## 📄 License
+## 🚀 Running the Project
 
-This repository will be licensed under the **MIT License** upon release.
+### 🚀 Running the Project
 
----
+#### Suggested Execution Order:
 
-## ✉️ Contact
+1. `1-dataset-rawaudioanalysis.ipynb`  
+2. `2-dataset-validation.ipynb`  
+3. `3-smsat-encoder-train-cosine-0-9975.ipynb`  
+4. `4-calmanalysismodel-cam-acc-0-99.ipynb`  
+5. `4multiclass-binary-otherbasemodels-ablation-study.ipynb`  
+6. `5-anova-paiwise-t-test.ipynb`  
+7. `6-calmanalysismodel-cam.ipynb`  
+8. `7-modelvisulization.ipynb`  
 
-For collaboration or questions, please reach out via:  
-📧 **engineersuleman118@gmail.com**
-
----
----
-
-## 🧩 Methods & Classes Reference
-
-This project defines core classes and helper methods inside Jupyter notebooks.  
-Here’s a quick reference of what you’ll find:
-
-### 📂 Dataset & Preprocessing
-- **`QMSAT` / `RawAudioDataset`**  
-  PyTorch dataset wrappers for heart sound recordings.  
-  - `__init__(root_dir, sample_rate, transform=None)`  
-  - `__getitem__(idx)` → waveform & label  
-  - `__len__()` → dataset size  
-
-- **Feature Extraction Functions**  
-  - `compute_amplitude_envelope(waveform)`  
-  - `extract_mfcc_features(waveform, sr, n_mfcc)`  
-  - `extract_time_features(waveform)`  
-  - `extract_wavelet_features(waveform)`  
+> ⚠️ Make sure all notebook paths match your directory structure after dataset placement.
 
 ---
-
-### 🎛️ Data Augmentation
-- **`AudioAugmentations`**  
-  Creates multiple “views” of an audio signal for self-supervised learning.  
-  - `add_noise(waveform)`  
-  - `time_stretch(waveform)`  
-  - `pitch_shift_fn(waveform)`  
-  - `apply_spec_augment(waveform)`  
-  - `random_crop(waveform)`  
-  - `__call__(waveform)` → augmented version  
-
----
-
-### 🧠 Self-Supervised Encoder
-- **`QSMATATSEncoder`** (1D CNN encoder with projection head)  
-  - `forward(x)` → projection for training  
-  - `encode(x)` → embeddings for downstream tasks  
-
-- **Training Helpers**  
-  - `train_self_supervised(model, loader, ...)`  
-  - `extract_audio_labels(batch)`  
-  - `plot_loss_curves(...)`, `plot_cosine_curves(...)`  
-  - `compute_and_plot_statistics(model, dataloader, method)`  
-
----
-
-### 🎯 Calmness Analysis
-- **`CalmnessAnalysisModel`**  
-  Simple feed-forward classifier for calmness prediction.  
-  - `__init__(input_dim, hidden_dim, num_classes)`  
-  - `forward(audio_features)` → logits  
-
-- **Visualization Tools**  
-  - Grad-CAM style heatmaps for model interpretability  
-
----
-
-### 📊 Statistics
-- **ANOVA & t-tests**  
-  - Pairwise comparisons between feature sets  
-  - Confirms significance of ablation studies  
-
----
-
-### 📈 Visualization
-- **EDA Plots** → amplitude envelopes, spectrograms  
-- **Embeddings** → PCA/TSNE of latent spaces  
-- **CAM Overlays** → interpret calmness predictions  
-
 
 ## Citation
 ``` bibtex
