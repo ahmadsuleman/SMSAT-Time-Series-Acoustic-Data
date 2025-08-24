@@ -56,3 +56,74 @@ For collaboration or questions, please reach out via:
       url={https://arxiv.org/abs/2505.00839}, 
 }
 
+---
+
+## 🧩 Methods & Classes Reference
+
+This project defines core classes and helper methods inside Jupyter notebooks.  
+Here’s a quick reference of what you’ll find:
+
+### 📂 Dataset & Preprocessing
+- **`QMSAT` / `RawAudioDataset`**  
+  PyTorch dataset wrappers for heart sound recordings.  
+  - `__init__(root_dir, sample_rate, transform=None)`  
+  - `__getitem__(idx)` → waveform & label  
+  - `__len__()` → dataset size  
+
+- **Feature Extraction Functions**  
+  - `compute_amplitude_envelope(waveform)`  
+  - `extract_mfcc_features(waveform, sr, n_mfcc)`  
+  - `extract_time_features(waveform)`  
+  - `extract_wavelet_features(waveform)`  
+
+---
+
+### 🎛️ Data Augmentation
+- **`AudioAugmentations`**  
+  Creates multiple “views” of an audio signal for self-supervised learning.  
+  - `add_noise(waveform)`  
+  - `time_stretch(waveform)`  
+  - `pitch_shift_fn(waveform)`  
+  - `apply_spec_augment(waveform)`  
+  - `random_crop(waveform)`  
+  - `__call__(waveform)` → augmented version  
+
+---
+
+### 🧠 Self-Supervised Encoder
+- **`QSMATATSEncoder`** (1D CNN encoder with projection head)  
+  - `forward(x)` → projection for training  
+  - `encode(x)` → embeddings for downstream tasks  
+
+- **Training Helpers**  
+  - `train_self_supervised(model, loader, ...)`  
+  - `extract_audio_labels(batch)`  
+  - `plot_loss_curves(...)`, `plot_cosine_curves(...)`  
+  - `compute_and_plot_statistics(model, dataloader, method)`  
+
+---
+
+### 🎯 Calmness Analysis
+- **`CalmnessAnalysisModel`**  
+  Simple feed-forward classifier for calmness prediction.  
+  - `__init__(input_dim, hidden_dim, num_classes)`  
+  - `forward(audio_features)` → logits  
+
+- **Visualization Tools**  
+  - Grad-CAM style heatmaps for model interpretability  
+
+---
+
+### 📊 Statistics
+- **ANOVA & t-tests**  
+  - Pairwise comparisons between feature sets  
+  - Confirms significance of ablation studies  
+
+---
+
+### 📈 Visualization
+- **EDA Plots** → amplitude envelopes, spectrograms  
+- **Embeddings** → PCA/TSNE of latent spaces  
+- **CAM Overlays** → interpret calmness predictions  
+
+
